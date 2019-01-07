@@ -26,7 +26,7 @@ export default class App extends Component {
 
     render() {
         return (
-            <View style={styles.container}>
+            <View testID='mainScreen' style={styles.container}>
                 <Button testID='secretButton' style={styles.welcome} onPress={this.toggleVisibility}
                         title={'Press to reveal secret'}/>
                 {this.state.isSecretVisible && (
